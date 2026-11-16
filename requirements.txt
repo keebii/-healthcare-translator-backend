@@ -1,0 +1,19 @@
+# Ethiopian Healthcare Translator - Backend dependencies
+# Pin versions for reproducibility.
+
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+python-dotenv==1.0.1
+
+# Translation model (NLLB-200)
+# The distilled 600M model is a practical default for student hardware.
+transformers==4.46.3
+torch==2.5.1
+sentencepiece==0.2.0
+sacremoses==0.1.1
+
+# Testing
+pytest==8.3.4
+httpx==0.28.1
